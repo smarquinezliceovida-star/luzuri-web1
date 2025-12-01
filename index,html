@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luzuri - Hecho a tu manera</title>
+  <link rel="icon" type="image/png" href="icono.png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f4ef;
+      color: #3a2f27;
+      overflow-x: hidden;
+    }
+    header {
+      background: #d6e8d0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 4px solid #8c6b4f;
+      animation: fadeDown 1.2s ease;
+    }
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .section {
+      padding: 40px 20px;
+      margin: 30px auto;
+      max-width: 1100px;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+      animation: fadeIn 1s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    h2 {
+      margin-top: 0;
+      color: #6d4c41;
+      font-size: 2rem;
+      border-bottom: 3px solid #a0826a;
+      display: inline-block;
+      padding-bottom: 6px;
+    }
+    h3 { color: #5d4037; }
+    img.responsive {
+      max-width: 100%;
+      border-radius: 16px;
+      margin-top: 15px;
+    }
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .galeria img {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      transition: transform .3s;
+    }
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+    .uso {
+      background: #e7efe3;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+    }
+    @media (max-width: 768px) {
+      h2 { font-size: 1.6rem; }
+      header img { height: 70px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Logo Luzuri" style="height:90px; border-radius:12px;" />
+</header>
+
+<div class="section" id="inicio">
+  <h2>Bienvenida a Luzuri</h2>
+  <p>Luzuri nace de la unión de dos ideas esenciales: <strong>lúz</strong> del latín "lux" que representa vitalidad, y <strong>rizuri</strong> inspirado en la palabra "rizo" más el sufijo "uri" del quechua para expresar esencia.</p>
+  <p>Somos una marca ecuatoriana creada para honrar la belleza natural del rizo y la identidad latinoamericana. Nuestro lema <strong>Hecho a tu manera</strong> refleja la libertad de lucir tus rizos como tú quieras.</p>
+</div>
+
+<div class="section" id="producto">
+  <h2>Nuestro Producto</h2>
+  <img src="producto.png" class="responsive" alt="Crema Luzuri 3 en 1" />
+  <p>Nuestra crema 3 en 1 hidrata, define y protege tus rizos. Diseñada para quienes quieren practicidad sin perder resultados profesionales.</p>
+  <div class="uso">
+    <h3>Cómo usarla</h3>
+    <ul>
+      <li><strong>1. Hidratante:</strong> Úsala sobre el cabello húmedo para recuperar suavidad.</li>
+      <li><strong>2. Crema de peinar:</strong> Aplícala sección por sección para mayor definición.</li>
+      <li><strong>3. Tratamiento:</strong> Déjala actuar como mascarilla para una nutrición profunda.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section" id="sobre-nosotros">
+  <h2>Sobre Nosotros</h2>
+  <p>Somos un equipo de formuladores, creativos y especialistas en cabello rizado comprometidos con desarrollar productos naturales de alta calidad.</p>
+  <p>Creemos en el poder de los ingredientes locales, la innovación y la identidad ecuatoriana. Cada producto es creado con amor, estudio y pruebas profesionales.</p>
+</div>
+
+<div class="section" id="branding">
+  <h2>Branding e Identidad</h2>
+  <p>Nuestro branding refleja naturaleza, bienestar y autenticidad. Los tonos verdes y cafés representan nuestros valores: conexión con la tierra, calidez y naturalidad.</p>
+  <ul>
+    <li><strong>Tipografía:</strong> Manuscrita y serifada.</li>
+    <li><strong>Iconografía:</strong> Inspirada en hojas y formas orgánicas.</li>
+    <li><strong>Paleta:</strong> Verde vida, café tierra, crema natural.</li>
+  </ul>
+</div>
+
+<div class="section" id="filosofia">
+  <h2>Filosofía</h2>
+  <p>Cada rizo es único, y nuestro objetivo es acompañarte en tu proceso de aceptarlo, cuidarlo y lucirlo.</p>
+  <h3>Misión</h3>
+  <p>Crear productos naturales y accesibles para personas con rizos y ondas.</p>
+  <h3>Visión</h3>
+  <p>Convertirnos en una marca reconocida dentro y fuera de Ecuador.</p>
+  <h3>Valores</h3>
+  <ul>
+    <li><strong>Autenticidad</strong></li>
+    <li><strong>Inclusión</strong></li>
+    <li><strong>Compromiso</strong></li>
+    <li><strong>Calidad</strong></li>
+    <li><strong>Naturalidad</strong></li>
+    <li><strong>Innovación</strong></li>
+    <li><strong>Identidad ecuatoriana</strong></li>
+  </ul>
+</div>
+
+<div class="section" id="ingredientes">
+  <h2>Ingredientes</h2>
+  <p>Nos inspiramos en la biodiversidad latinoamericana para crear fórmulas efectivas.</p>
+  <ul>
+    <li><strong>Nopal:</strong> Reduce frizz y sella hidratación.</li>
+    <li><strong>Sábila:</strong> Repara y estimula el crecimiento.</li>
+    <li><strong>Aguacate:</strong> Suaviza y da brillo.</li>
+    <li><strong>Cacao:</strong> Fortalece la fibra capilar.</li>
+  </ul>
+</div>
+
+<div class="section" id="galeria">
+  <h2>Galería</h2>
+  <p>Un vistazo a la esencia de Luzuri y a los rizos que celebra.</p>
+  <div class="galeria">
+    <img src="producto.png" alt="Producto 1" />
+    <img src="producto.png" alt="Producto 2" />
+    <img src="producto.png" alt="Producto 3" />
+  </div>
+</div>
+
+<div class="section" id="compromiso">
+  <h2>Nuestro Compromiso</h2>
+  <p>Desde formuladores hasta atención al cliente, todos compartimos la visión de ofrecer productos honestos y de alta calidad.</p>
+</div>
+
+</body>
+</html>
